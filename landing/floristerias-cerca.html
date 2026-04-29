@@ -21,7 +21,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'AW-18076875641');
+  // send_page_view:false evita que la simple visita cuente como conversión.
+  // La conversión SOLO se dispara on-click vía contactWA()/orderWA() en js/landing.js
+  gtag('config', 'AW-18076875641', {'send_page_view': false});
 </script>
 <!-- Event snippet for WhatsApp_Contacto conversion page -->
 <script>
