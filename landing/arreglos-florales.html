@@ -21,13 +21,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  // send_page_view:false evita que la simple visita cuente como conversión.
+  // El page_view se envía normal (cuenta como Remarketing en Google Ads).
   // La conversión SOLO se dispara on-click vía contactWA()/orderWA() en js/landing.js
-  gtag('config', 'AW-18076875641', {'send_page_view': false});
-</script>
-<!-- Event snippet for WhatsApp_Contacto conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-18076875641/fpMECPamh5kcEPn23KtD'});
+  gtag('config', 'AW-18076875641');
 </script>
 
     <!-- Google Fonts -->
